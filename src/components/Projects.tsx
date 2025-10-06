@@ -164,7 +164,7 @@ const Projects = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {projects.map((project, index) => (
             <Card 
               key={index} 
@@ -226,14 +226,14 @@ const Projects = () => {
                   </a>
 
                   {/* Demo button (optional, you can add links later) */}
-                  <Button 
+                  {/* <Button 
                     variant="outline" 
                     size="sm" 
                     className="flex-1 border-neon-purple text-neon-purple hover:bg-neon-purple/10 btn-ripple"
                   >
                     <ExternalLink className="mr-2 h-4 w-4" />
                     Demo
-                  </Button>
+                  </Button> */}
                 </div>
               </div>
             </Card>

@@ -15,7 +15,7 @@ const Hero = () => {
               Hi, I'm Satvashil Bhosale 👋
             </h1>
             <h2 className="text-xl lg:text-2xl text-neon-cyan font-semibold">
-              AI/ML Engineer | Full Stack Developer | Open Source Contributor
+              AI/ML Engineer | Data Scientist | Open Source Contributor
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl">
               I build intelligent solutions that combine data, creativity, and technology.
@@ -24,15 +24,21 @@ const Hero = () => {
 
           {/* Action Buttons */}
           <div className="flex flex-wrap gap-4">
-            <Button 
-              variant="default" 
-              size="lg" 
-              className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 btn-ripple glow-primary"
+            <a 
+              href="portfolio\public\Satvashil Bhosale Resume.pdf"  // place your PDF in the public folder
+              download="Satvashil_Bhosale_Resume.pdf"
             >
-              <Download className="mr-2 h-5 w-5" />
-              Resume
-            </Button>
-            <Button 
+              <Button 
+                variant="default" 
+                size="lg" 
+                className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 btn-ripple glow-primary"
+              >
+                <Download className="mr-2 h-5 w-5" />
+                Resume
+              </Button>
+            </a>
+            <a href="https://github.com/coder-sattu/" target="__blank">
+              <Button 
               variant="outline" 
               size="lg" 
               className="border-neon-blue text-neon-blue hover:bg-neon-blue/10 btn-ripple glow-secondary"
@@ -40,14 +46,18 @@ const Hero = () => {
               <Github className="mr-2 h-5 w-5" />
               GitHub
             </Button>
-            <Button 
-              variant="outline" 
-              size="lg" 
-              className="border-neon-purple text-neon-purple hover:bg-neon-purple/10 btn-ripple glow-secondary"
-            >
-              <Linkedin className="mr-2 h-5 w-5" />
-              LinkedIn
-            </Button>
+            </a>
+            
+            <a href="https://www.linkedin.com/in/satvashil-bhosale-17730a27a/" target="__blank">
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="border-neon-purple text-neon-purple hover:bg-neon-purple/10 btn-ripple glow-secondary"
+              >
+                <Linkedin className="mr-2 h-5 w-5" />
+                LinkedIn
+              </Button>
+            </a>
           </div>
         </div>
 
